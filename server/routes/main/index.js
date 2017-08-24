@@ -148,7 +148,7 @@ module.exports = function (options) {
   }
  
 
-  router.post('/api/', function(req, res) {
+  router.post('/react-lessons/api/', function(req, res) {
 
     // debug("Server. Request Requested");
     // console.log("Server. Request Requested", req.query);

@@ -55,7 +55,7 @@ export default class PageGraphiQL extends Page{
 	    // body.append(i, value);
 	  };
 
-	  return fetch('/api/?pub_action=graphql', {
+	  return fetch('/react-lessons/api/?pub_action=graphql', {
 	    method: 'post',
 	    headers: { 'Content-Type': 'application/json' },
 	    // body: JSON.stringify(graphQLParams),
