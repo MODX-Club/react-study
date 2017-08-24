@@ -6,8 +6,6 @@ import React, {Component} from "react";
 
 import PropTypes from 'prop-types';
 
-import Lesson1 from '../lessons/lesson1/';
-
 export default class MainApp extends Component {
 
 
@@ -25,12 +23,14 @@ export default class MainApp extends Component {
   render() {
 
     let {
+      children,
       ...other
     } = this.props;
 
-    return <div>
-      <Lesson1 
-      />
+    return <div
+      id="MainApp"
+    >
+      {children}
     </div>
 
   }

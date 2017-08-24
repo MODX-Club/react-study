@@ -5,6 +5,7 @@ export const db = {
     user : 'db-user',
     password : 'db-password',
     database : 'db-name',
+    prefix 		: 'modx_',
   }
 }
 

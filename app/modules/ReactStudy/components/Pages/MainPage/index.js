@@ -4,12 +4,10 @@ import PropTypes from 'prop-types';
 
 import Page from '../layout'; 
 
-
+import {Link} from 'react-router';
 
 export default class MainPage extends Page{
 
-	static contextTypes = {
-	};
 
 	constructor(props){
 
@@ -22,7 +20,26 @@ export default class MainPage extends Page{
 
  	render(){
 
- 		return <div>Main page</div>
+ 		return <div>
+ 			<ul>
+ 				<li>
+ 					<Link
+ 						to="/react-lessons/lesson1"
+ 						href="/lesson1"
+ 					>
+ 						Урок 1. Snackbar
+ 					</Link>
+ 				</li>
+ 				<li>
+ 					<Link
+ 						to="/react-lessons/lesson2"
+ 						href="/lesson2"
+ 					>
+ 						Урок 1. GraphQL
+ 					</Link>
+ 				</li>
+ 			</ul>
+ 		</div>
 	}
 }
 

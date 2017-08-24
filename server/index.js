@@ -19,6 +19,20 @@ const app = express();
 // app.use(bodyParser.json());       // to support JSON-encoded bodies
 
 
+var router = require('./routes/main')({
+  app: app,
+  // host: config.host,
+  // raw_host_port: config.raw_host_port,
+  // path: config.path,
+  // hot_reload_debug: config.hot_reload_debug,
+  // hot_reload_port: config.hot_reload_port,
+});
+
+// If you need a backend, e.g. an API, add your custom backend-specific middleware here
+// app.use('/api', myApi);
+
+app.use(router);
+
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
 	outputPath: resolve(process.cwd(), 'build'),
