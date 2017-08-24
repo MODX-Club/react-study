@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Button from 'material-ui/Button';
 import Snackbar from 'material-ui/Snackbar';
 
-class PositionedSnackbar extends Component {
+import Page from '../../layout'; 
+
+export default class Lesson1Page extends Page {
   state = {
     open: false,
     vertical: null,
@@ -17,7 +19,7 @@ class PositionedSnackbar extends Component {
     this.setState({ open: false });
   };
 
-  render() {
+  getContent() {
     const { vertical, horizontal, open } = this.state;
     return (
       <div>
@@ -51,6 +53,4 @@ class PositionedSnackbar extends Component {
       </div>
     );
   }
-}
-
-export default PositionedSnackbar;
+} 
