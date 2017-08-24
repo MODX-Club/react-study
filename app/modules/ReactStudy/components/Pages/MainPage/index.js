@@ -35,7 +35,7 @@ export default class MainPage extends Page{
  						to="/react-lessons/lesson2"
  						href="/lesson2"
  					>
- 						Урок 1. GraphQL
+ 						Урок 2. GraphQL
  					</Link>
  				</li>
  			</ul>
